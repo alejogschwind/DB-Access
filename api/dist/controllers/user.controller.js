@@ -39,7 +39,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteUser = exports.updateUser = exports.createUser = exports.getUser = exports.getUsers = void 0;
 var typeorm_1 = require("typeorm");
 var User_1 = require("../models/User");
-var getUsers = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+var getUsers = function (req, res, next) { return __awaiter(void 0, void 0, Promise, function () {
     var userRepository, users, err_1;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -58,7 +58,7 @@ var getUsers = function (req, res, next) { return __awaiter(void 0, void 0, void
     });
 }); };
 exports.getUsers = getUsers;
-var getUser = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+var getUser = function (req, res, next) { return __awaiter(void 0, void 0, Promise, function () {
     var userRepository, user, err_2;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -83,7 +83,7 @@ var getUser = function (req, res, next) { return __awaiter(void 0, void 0, void 
     });
 }); };
 exports.getUser = getUser;
-var createUser = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+var createUser = function (req, res, next) { return __awaiter(void 0, void 0, Promise, function () {
     var userRepository, newUser, user, err_3;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -103,7 +103,7 @@ var createUser = function (req, res, next) { return __awaiter(void 0, void 0, vo
     });
 }); };
 exports.createUser = createUser;
-var updateUser = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+var updateUser = function (req, res, next) { return __awaiter(void 0, void 0, Promise, function () {
     var userRepository, user, err_4;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -127,7 +127,7 @@ var updateUser = function (req, res, next) { return __awaiter(void 0, void 0, vo
     });
 }); };
 exports.updateUser = updateUser;
-var deleteUser = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+var deleteUser = function (req, res, next) { return __awaiter(void 0, void 0, Promise, function () {
     var userRepository, result, err_5;
     return __generator(this, function (_a) {
         switch (_a.label) {

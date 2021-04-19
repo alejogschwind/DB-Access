@@ -40,7 +40,7 @@ exports.removeInstructor = exports.updateInstructors = exports.deleteCourse = ex
 var typeorm_1 = require("typeorm");
 var Course_1 = require("../models/Course");
 var User_1 = require("../models/User");
-var getCourses = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+var getCourses = function (req, res, next) { return __awaiter(void 0, void 0, Promise, function () {
     var courseRepository, courses, err_1;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -59,7 +59,7 @@ var getCourses = function (req, res, next) { return __awaiter(void 0, void 0, vo
     });
 }); };
 exports.getCourses = getCourses;
-var getCourse = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+var getCourse = function (req, res, next) { return __awaiter(void 0, void 0, Promise, function () {
     var courseRepository, course, err_2;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -84,7 +84,7 @@ var getCourse = function (req, res, next) { return __awaiter(void 0, void 0, voi
     });
 }); };
 exports.getCourse = getCourse;
-var createCourse = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+var createCourse = function (req, res, next) { return __awaiter(void 0, void 0, Promise, function () {
     var courseRepository, newCourse, saved, course, err_3;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -107,7 +107,7 @@ var createCourse = function (req, res, next) { return __awaiter(void 0, void 0, 
     });
 }); };
 exports.createCourse = createCourse;
-var updateCourse = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+var updateCourse = function (req, res, next) { return __awaiter(void 0, void 0, Promise, function () {
     var courseRepository, course, err_4;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -131,7 +131,7 @@ var updateCourse = function (req, res, next) { return __awaiter(void 0, void 0, 
     });
 }); };
 exports.updateCourse = updateCourse;
-var deleteCourse = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+var deleteCourse = function (req, res, next) { return __awaiter(void 0, void 0, Promise, function () {
     var courseRepository, result, err_5;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -154,7 +154,7 @@ var deleteCourse = function (req, res, next) { return __awaiter(void 0, void 0, 
 }); };
 exports.deleteCourse = deleteCourse;
 // Pisa el arreglo de instructores con el nuevo pasado por body.
-var updateInstructors = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+var updateInstructors = function (req, res, next) { return __awaiter(void 0, void 0, Promise, function () {
     var courseRepository, userRepository, course, users, newInstructors, updatedCourse, err_6;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -186,7 +186,7 @@ var updateInstructors = function (req, res, next) { return __awaiter(void 0, voi
     });
 }); };
 exports.updateInstructors = updateInstructors;
-var removeInstructor = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+var removeInstructor = function (req, res, next) { return __awaiter(void 0, void 0, Promise, function () {
     var courseRepository, userRepository, course, user_1, updatedCourse, err_7;
     return __generator(this, function (_a) {
         switch (_a.label) {

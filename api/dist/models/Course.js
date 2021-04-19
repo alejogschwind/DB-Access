@@ -15,6 +15,7 @@ var User_1 = require("./User");
 var Course = /** @class */ (function () {
     function Course() {
     }
+    var _a, _b;
     __decorate([
         typeorm_1.PrimaryGeneratedColumn(),
         __metadata("design:type", Number)
@@ -31,13 +32,13 @@ var Course = /** @class */ (function () {
         typeorm_1.Column({
             nullable: true,
         }),
-        __metadata("design:type", Date)
+        __metadata("design:type", typeof (_a = typeof Date !== "undefined" && Date) === "function" ? _a : Object)
     ], Course.prototype, "startDate", void 0);
     __decorate([
         typeorm_1.Column({
             nullable: true,
         }),
-        __metadata("design:type", Date)
+        __metadata("design:type", typeof (_b = typeof Date !== "undefined" && Date) === "function" ? _b : Object)
     ], Course.prototype, "endDate", void 0);
     __decorate([
         typeorm_1.ManyToMany(function () { return User_1.User; }, function (user) { return user.courses; }, {
